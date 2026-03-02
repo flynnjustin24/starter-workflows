@@ -54,3 +54,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: ${{ steps.zscaler-iac-scan.sarif_file_path }}
+git add .
+git commit -m "Initial commit: Homework assignment"
