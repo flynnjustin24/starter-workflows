@@ -24,6 +24,11 @@ jobs:
       with:
         ruby-version: 2.6.x
 
+    - name: Install npm dependencies
+      run: |
+        npm i react-dom
+        npm install react react-dom
+
     - name: Publish to GPR
       run: |
         mkdir -p $HOME/.gem
